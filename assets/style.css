@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+:root {
+  --normal: #aa9;
+  --fire: #f42;
+  --grass: #7c5;
+  --poison: #a59;
+  --water: #39f;
+  --electric: #fc3;
+  --ice: #6cf;
+  --fighting: #b54;
+  --ground: #db5;
+  --flying: #89f;
+  --psychic: #f59;
+  --bug: #ab2;
+  --rock: #ba6;
+  --ghost: #66b;
+  --dragon: #76e;
+  --dark: #222;
+  --steel: #aab;
+  --fairy: #e9e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+  135deg,
+  hsl(152deg 43% 50%) 0%,
+  hsl(161deg 53% 44%) 11%,
+  hsl(168deg 68% 38%) 22%,
+  hsl(174deg 94% 32%) 33%,
+  hsl(178deg 100% 29%) 44%,
+  hsl(181deg 100% 28%) 56%,
+  hsl(184deg 100% 27%) 67%,
+  hsl(187deg 81% 29%) 78%,
+  hsl(190deg 63% 31%) 89%,
+  hsl(194deg 51% 31%) 100%
+);
+  font-family: 'Lato', sans-serif;
+  color: #445E5B;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 20px;
+}
+
+.logo {
+  width: 25%;
+  margin-top: 2%;
+}
+
+.poke-container {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.poke {
+  background-position: center center;
+  background-size: cover;
+  padding:2rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.poke-card {
+  background: #fff !important;
+  position: absolute;
+  width: 95%;
+  height: 52%;
+  border-radius: 0.5rem;
+  z-index: 2;
+  bottom: 0.4rem;
+}
+.poke h2 {
+  font-size: 1.3rem;
+  margin-top: 0.4rem;
+  font-weight: 700;
+  z-index: 3;
+}
+.id-poke {
+  position: absolute;
+  top: 1rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.poke img {
+  width: 150px;
+  z-index: 3;
+}
+.poke .exp {
+  font-size: .6rem;
+  font-weight: 800;
+  z-index: 3;
+}
+.poke-info {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0.3rem;
+}
+.poke-info .info {
+  font-weight: 800;
+  z-index: 3;
+  text-align: center;
+}
+.tipo-icon {
+  width: 20px !important;
+}
+.border-r{
+  padding-right: 0.3rem;
+  border-right: solid 0.1rem rgba(0, 0, 0, 0.16);
+}
+.border-l{
+  padding-left: 0.3rem;
+  border-left: solid 0.1rem rgba(0, 0, 0, 0.16);
+}
+
+.border-t{
+  border-top: solid 0.1rem rgba(0, 0, 0, 0.16);
+  z-index: 3;
+  width: 100%;
+}
+.sub {
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #999EA1;
+}
+
+.poke .info-adicional {
+  z-index: 3;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.pokeball {
+  height: 48px;
+  animation: rotate-center 0.5s linear 0s infinite normal none;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 36px;
+  color: rgb(216, 216, 216);
+}
+footer a{
+  text-decoration: none;
+}
+footer strong {
+  color: #ffffff;
+}
+
+@keyframes rotate-center {
+			
+  0% {
+    transform:rotate(0);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
