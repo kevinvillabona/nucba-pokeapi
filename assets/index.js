@@ -186,15 +186,12 @@ const init = () => {
 
   window.addEventListener("scroll", async () => {
     //por alguna razon, el siguiente codigo no funciona en mobile
-    //const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    //const bottom = scrollTop + clientHeight >= scrollHeight - 1;
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    const bottom = scrollTop + clientHeight >= scrollHeight - 1;
+    console.log(bottom)
 
-    const m = 0.1;
-    const bottom =
-      m >
-      document.documentElement.scrollHeight -
-        window.scrollY -
-        window.innerHeight;
+    // const m = 0.1;
+    // const bottom = m > document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
 
     if (bottom && !isFetching) {
       cargarBtn.classList.add("hidden");
