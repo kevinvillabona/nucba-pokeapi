@@ -1,7 +1,7 @@
 # [NUCBA](https://nucba.io/codingbootcamp) | Pokedex | PokeAPI - JavaScript
 Desafío correspondiente a la clase 1.20 del módulo 02 de JavaScript en el que se consume la API [PokeApi](https://pokeapi.co/docs/v2) para crear una aplicación web que muestre un listado de Pokemon. 
 
-Adicionalmente al desafío, basé el diseño de las tarjetas en las existentes dentro del juego [Pokemon GO](https://pokemongolive.com/).
+Adicionalmente al desafío, basé el diseño de las tarjetas en las existentes dentro del juego [Pokemon GO](https://pokemongolive.com/), e inserté un buscador.
 
 ## Diseño propuesto 
 ## Capturas de pantalla
