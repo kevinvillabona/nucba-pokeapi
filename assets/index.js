@@ -190,8 +190,8 @@ const init = () => {
     // const bottom = scrollTop + clientHeight >= scrollHeight - 1;
 
     const m = 0.1;
-    const bottom = m > document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
-
+    // const bottom = m > document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+    const bottom = m > document.querySelector("main").scrollHeight - window.scrollY - window.innerHeight;
     if (bottom && !isFetching) {
       cargarBtn.classList.add("hidden");
       nextPokemons();
