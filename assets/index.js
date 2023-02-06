@@ -93,7 +93,7 @@ const init = () => {
   window.addEventListener("scroll", async () => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
 
-    const bottom = scrollTop + clientHeight >= scrollHeight ;
+    const bottom = scrollTop + clientHeight >= scrollHeight - 1;
 
     if (bottom && !isFetching) {
       isFetching = true;
