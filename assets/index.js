@@ -90,15 +90,16 @@ const init = () => {
     renderPokemonList(infoPokemones);
   });
 
+  //boton de "cargar mas" que aparezca solo la primera vez para pantallas mayores
+  
   window.addEventListener("scroll", async () => {
-    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    //const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
 
-    const bottom = scrollTop + clientHeight >= scrollHeight - 1;
+    //const bottom = scrollTop + clientHeight >= scrollHeight - 1;
 
+   const m = .1;
 
-   //const m = .1;
-
-   //const bottom = m > document.documentElement.scrollHeight - window.scrollY - window.innerHeight
+   const bottom = m > document.documentElement.scrollHeight - window.scrollY - window.innerHeight
 
     if (bottom && !isFetching) {
       isFetching = true;
