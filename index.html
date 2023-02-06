@@ -12,30 +12,37 @@
   />
     <title>Clase 1.20 JS | PokeApi</title>
     <link rel="stylesheet" href="assets/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
   </head>
   <body>
-    <main>
-      <section>
+    <body>
+      <main>
         <img
-        src="assets/img/logo.png"
-        alt=""
-        class="logo"
-      />
-      <div class="poke-container" id="cards">
-        <!--se renderizan las cards-->
-      </div>
-        <img src="./assets/img/pokeball.png" alt="" class="pokeball" />
-    </section>
-    </main>
-   
-   <!-- <footer>
-      <p><a href="https://github.com/kevinvillabona"><strong>Kevin</strong></a> | Bootcamp Full Stack <a href="https://www.nucba.io/codingbootcamp"><strong>NUCBA</strong></a> | Módulo 02 - JavaScript</p>
-    </footer> -->
+          src="assets/img/logo2.png"
+          alt=""
+          class="logo"
+        />
+        <form id="form">
+          <label class="label">Busca un Pokémon usando su número de la Pokédex: </label>
+          <div class="search-container">
+            <div class="input-container">
+              <input type="number" class="input" placeholder="Buscar...">
+            </div>
+            <button id="search-button" class="button">Buscar</button>
+          </div>
+        </form>
+        <section>
+          
+        <div class="poke-container" id="container">
+
+        </div>
+          <img src="./assets/img/pokeball.png" alt="" class="pokeball" />
+          <button type="submit" id="cargar" class="button center" onclick="nextPokemons()">Cargar más</button>
+        </section>
+      </main>
+     
+      <footer>
+        <p><a href="https://github.com/kevinvillabona"><strong>Kevin</strong></a> | Bootcamp Full Stack <a href="https://www.nucba.io/codingbootcamp"><strong>NUCBA</strong></a> | Módulo 02 - JavaScript</p>
+      </footer>
 
     <script src="./assets/index.js"></script>
   </body>

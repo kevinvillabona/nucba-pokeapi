@@ -28,22 +28,85 @@
 
 body {
   background-image: linear-gradient(
-  135deg,
-  hsl(152deg 43% 50%) 0%,
-  hsl(161deg 53% 44%) 11%,
-  hsl(168deg 68% 38%) 22%,
-  hsl(174deg 94% 32%) 33%,
-  hsl(178deg 100% 29%) 44%,
-  hsl(181deg 100% 28%) 56%,
-  hsl(184deg 100% 27%) 67%,
-  hsl(187deg 81% 29%) 78%,
-  hsl(190deg 63% 31%) 89%,
-  hsl(194deg 51% 31%) 100%
-);
+    135deg,
+    hsl(103deg 77% 78%) 0%,
+    hsl(115deg 69% 78%) 9%,
+    hsl(127deg 65% 76%) 18%,
+    hsl(138deg 62% 72%) 27%,
+    hsl(146deg 60% 69%) 36%,
+    hsl(153deg 58% 66%) 45%,
+    hsl(159deg 56% 63%) 55%,
+    hsl(164deg 54% 60%) 64%,
+    hsl(168deg 52% 57%) 73%,
+    hsl(172deg 50% 54%) 82%,
+    hsl(175deg 48% 52%) 91%,
+    hsl(178deg 45% 50%) 100%
+  );
+  background-attachment: fixed;
   font-family: 'Lato', sans-serif;
   color: #445E5B;
 }
 
+main {
+  width: 94%;
+  margin: auto;
+  margin-top: 3%;
+  background-color: #FDFFFC;
+  border-radius: 0.5rem;
+  padding:0 2rem 2rem 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-weight: 700;
+
+}
+
+.search-container{
+  display: flex;
+}
+
+.input {
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  border-radius: 50px;
+  border: 1px solid #445e5b1a;
+  width: 10rem;
+  background-image: url("./img/Magnifying_glass_icon.svg");
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: #E5F0E0;
+  color: #445E5B;
+  font-weight: 700;
+}
+input[type="number"] {
+  padding-left: 2rem;
+}
+input[type="number"]:focus {
+  outline: none;
+
+}
+input[type="number"]::placeholder {
+  font-weight: 400;
+  color: #445E5B;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  background-color: #445E5B;
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -54,8 +117,12 @@ section {
 }
 
 .logo {
-  width: 25%;
+  width: 30%;
   margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
 }
 
 .poke-container {
@@ -151,7 +218,6 @@ section {
   font-weight: 700;
   margin-top: 0.5rem;
 }
-
 .pokeball {
   height: 48px;
   animation: rotate-center 0.5s linear 0s infinite normal none;
@@ -162,17 +228,25 @@ section {
   visibility: visible;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 footer {
-  width: 100%;
+  width: 94%;
   text-align: center;
-  padding: 36px;
-  color: rgb(216, 216, 216);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #FDFFFC;
+  border-radius: 0.5rem;
 }
 footer a{
   text-decoration: none;
 }
 footer strong {
-  color: #ffffff;
+  color: #445E5B;
 }
 
 @keyframes rotate-center {
@@ -182,5 +256,17 @@ footer strong {
   }
   100% {
     transform:rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    width: 90%;
+  }
+  .logo {
+    width: 60%;
+  }
+  footer {
+    width: 90%;
   }
 }
