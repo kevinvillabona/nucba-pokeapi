@@ -3,6 +3,7 @@ Desafío correspondiente a la clase 1.20 del módulo 02 de JavaScript en el que 
 
 Adicionalmente al desafío, basé el diseño de las tarjetas en las existentes dentro del juego [Pokemon GO](https://pokemongolive.com/).
 
+## Diseño propuesto 
 ## Capturas de pantalla
 <p align="center">
  <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi2.png" />
