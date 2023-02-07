@@ -3,11 +3,16 @@ Solución al desafío correspondiente a la clase 1.20 del módulo 02 de JavaScri
 
 Adicionalmente al desafío, se ha implementado un diseño atractivo y fiel a las tarjetas del juego [Pokemon GO](https://pokemongolive.com/). Y para mejorar la funcionalidad de la aplicación, se ha integrado un buscador eficiente.
 
-## Diseño propuesto 
-## Capturas de pantalla
+## Propuesta del desafío
 <p align="center">
- <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi2.png" />
- <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi.png" />
+ <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-desafio.png" />
 </p>
 
+## Capturas de pantalla
+<p align="center">
+ <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi3.png" />
+</p>
+<p align="center">
+ <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi.png" />
+</p>
 
