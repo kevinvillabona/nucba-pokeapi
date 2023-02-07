@@ -137,7 +137,9 @@ const renderPokemonList = (pokeList) => {
 };
 
 const search = (e) => {
-  cargarBtn.classList.add("hidden");
+  // cargarBtn.classList.add("hidden");
+  cargarBtn.remove();
+  loader.remove();
   isFetching = true;
   e.preventDefault();
   const inputVal = input.value;
@@ -191,10 +193,11 @@ const init = () => {
 
     const m = 0.1;
     // const bottom = m > document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
-    const bottom = m > document.querySelector("main").scrollHeight - window.scrollY - window.innerHeight;
+     const bottom = m > document.querySelector("main").scrollHeight - window.scrollY - window.innerHeight;
     if (bottom && !isFetching) {
-      cargarBtn.classList.add("hidden");
-      nextPokemons();
+      // cargarBtn.classList.add("hidden");
+       cargarBtn.remove();
+       nextPokemons();
     }
   });
 };
