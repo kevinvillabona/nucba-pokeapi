@@ -85,14 +85,14 @@ main {
   color: #445E5B;
   font-weight: 700;
 }
-input[type="number"] {
+input[type="search"] {
   padding-left: 2rem;
 }
-input[type="number"]:focus {
+input[type="search"]:focus {
   outline: none;
 
 }
-input[type="number"]::placeholder {
+input[type="search"]::placeholder {
   font-weight: 400;
   color: #445E5B;
 }
@@ -110,7 +110,7 @@ input[type="number"]::placeholder {
 
 .reload {
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 10px;
   width: 1.5rem;
   color: #39f;
 }

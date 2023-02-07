@@ -142,11 +142,11 @@ const search = (e) => {
   loader.remove();
   isFetching = true;
   e.preventDefault();
-  const inputVal = input.value;
+  const inputVal = input.value.toLowerCase().trim();
   if (!inputVal) {
     emptyContainer();
   }
-  const poke = fetchPokemonSearched(Number(inputVal));
+  const poke = fetchPokemonSearched(inputVal);
   renderResult(poke);
 };
 
