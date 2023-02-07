@@ -15,5 +15,6 @@ Adicionalmente al desafío, se ha implementado un diseño atractivo y fiel a las
 <p align="center">
  <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi5.png" />
  <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi4.png" />
+ <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-PokeApi/blob/main/assets/img/capturas/captura-pkapi6.png" />
 </p>
 
