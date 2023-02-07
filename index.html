@@ -16,11 +16,14 @@
   <body>
     <body>
       <main>
-        <img
+        <div onclick="window.location.reload()" style="cursor: pointer;">
+          <img
           src="assets/img/logo2.png"
           alt=""
           class="logo"
         />
+        </div>
+
         <form id="form">
           <label class="label">Busca un Pokémon usando su número de la Pokédex: </label>
           <div class="search-container">
@@ -28,6 +31,7 @@
               <input type="number" class="input" placeholder="Buscar...">
             </div>
             <button id="search-button" class="button">Buscar</button>
+            <img src="assets/img/reload.svg" alt="reload" class="reload" onclick="window.location.reload()" style="cursor: pointer;">
           </div>
         </form>
         <section>

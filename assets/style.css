@@ -107,6 +107,13 @@ input[type="number"]::placeholder {
   border: none;
   cursor: pointer;
 }
+
+.reload {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 1.5rem;
+  color: #39f;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -268,5 +275,10 @@ footer strong {
   }
   footer {
     width: 90%;
+  }
+}
+@media (max-width: 340px) {
+  .input {
+    width: 8rem;
   }
 }
